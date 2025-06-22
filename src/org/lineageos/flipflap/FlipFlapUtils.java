@@ -26,7 +26,7 @@ import android.preference.PreferenceManager;
 
 import com.android.internal.util.ArrayUtils;
 
-import lineageos.hardware.LineageHardwareManager;
+import evervolv.hardware.HardwareManager;
 
 public class FlipFlapUtils {
 
@@ -86,8 +86,8 @@ public class FlipFlapUtils {
     }
 
     public static boolean getHighTouchSensitivitySupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY);
+        final HardwareManager hardware = HardwareManager.getInstance(context);
+        return hardware.isSupported(HardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY);
     }
 
 }
